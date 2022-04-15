@@ -1,0 +1,17 @@
+<main>
+
+  <h2>Celebrities</h2>
+
+  {{#each celebrities}}
+    <div class='headline'>
+
+      <h1>
+        <a href='/celebrities/{{_id}}'>{{name}}</a>
+      </h1>
+    </div>
+
+  {{/each}}
+  <div class='add'>
+    <h2><a href='/celebrities/create'>+</a></h2>
+  </div>
+</main>

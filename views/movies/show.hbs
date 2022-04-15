@@ -1,0 +1,21 @@
+<main>
+  <div class='show-headline'>
+
+    <h1>{{movie.title}}</h1>
+
+    <h2>{{movie.year}} / {{movie.genre}}</h2>
+
+    <h2>directed by: {{movie.director}}</h2>
+    <p>{{movie.plot}}</p>
+
+  </div>
+
+  <div class='buttons-show'>
+    <div class='edit-button'>
+      <a href='/movies/{{movie._id}}/edit'>Edit Movie</a>
+    </div>
+    <form action='/movies/{{movie._id}}/delete' method='POST'>
+      <button class='delete-button'>Delete Movie</button>
+    </form>
+  </div>
+</main>

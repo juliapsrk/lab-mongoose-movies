@@ -1,0 +1,20 @@
+<main>
+  <div class='show-headline'>
+    <h1>{{celebrity.name}}</h1>
+
+    <ul>
+      <li>Profession: {{celebrity.occupation}}</li>
+      <li>Catch Phrase (everybody has one:){{celebrity.catchPhrase}}</li>
+    </ul>
+  </div>
+
+  <div class='buttons-show'>
+    <div class='edit-button'>
+      <a href='/celebrities/{{celebrity._id}}/edit'>Edit Celebrtity</a>
+    </div>
+    <form action='/celebrities/{{celebrity._id}}/delete' method='POST'>
+      <button class='delete-button'>Delete Celebrity</button>
+    </form>
+  </div>
+
+</main>

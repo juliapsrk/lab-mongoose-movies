@@ -1,0 +1,28 @@
+<main>
+  <div class='create-headline'>
+
+    <h1>Edit {{celebrity.name}}</h1>
+
+    <form method='POST' action='/celebrities/{{celebrity._id}}/edit'>
+      <label for='Celebrity Name'></label>
+      <input
+        type='text'
+        name='name'
+        id='hero-name-input'
+        value='{{celebrity.name}}'
+      />
+      <label for='occupation'></label>
+      <input type='text' name='occupation' value='{{celebrity.occupation}}' />
+      {{!-- <label for='catchphrase'></label>
+      <input type='text' name='catchPhrase' value='{{celebrity.catchPhrase}}' /> --}}
+      <label for='catchphrase'></label>
+      <textarea
+        name='catchPhrase'
+        cols='80'
+        rows='4'
+      >{{celebrity.catchPhrase}}</textarea>
+
+      <button class='create-button'>Edit Celebrity</button>
+    </form>
+  </div>
+</main>

@@ -1,0 +1,16 @@
+<main>
+
+  <h2>Movies</h2>
+
+  {{#each movies}}
+    <div class='headline'>
+      <h1> <a href='/movies/{{_id}}'>{{title}}</a></h1>
+    </div>
+
+  {{/each}}
+
+  <div class='add'>
+    <h2><a href='/movies/create'>+</a></h2>
+  </div>
+
+</main>

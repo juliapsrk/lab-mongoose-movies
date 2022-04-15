@@ -1,0 +1,26 @@
+<main>
+  <div class='create-headline'>
+
+    <h1>Edit {{movie.title}}</h1>
+
+    <form method='POST' action='/movies/{{movie._id}}/edit'>
+      <label for='title'></label>
+      <input
+        type='text'
+        name='title'
+        id='movie-name-input'
+        value='{{movie.title}}'
+      />
+      <label for='year'></label>
+      <input type='Number' name='year' value='{{movie.year}}' />
+      <label for='genre'></label>
+      <input type='text' name='genre' value='{{movie.genre}}' />
+      <label for='director'></label>
+      <input type='text' name='director' value='{{movie.director}}' />
+      <label for='plot'></label>
+      <textarea name='plot' cols='80' rows='8'>{{movie.plot}}</textarea>
+      <button class='create-button'>Edit Movie</button>
+    </form>
+  </div>
+
+</main>

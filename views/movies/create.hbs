@@ -1,0 +1,34 @@
+<main>
+  <div class='create-headline'>
+
+    <h1>New movie</h1>
+
+    <form method='POST' action='./create'>
+      <label for='title'></label>
+      <input
+        type='text'
+        name='title'
+        id='movie-name-input'
+        placeholder='Movie Title'
+      />
+      <label for='year'></label>
+      <input type='Number' name='year' placeholder='1900' />
+      <label for='genre'></label>
+      <input type='text' name='genre' placeholder='Genre' />
+      <label for='director'></label>
+      <input type='text' name='director' placeholder='Director' />
+
+      <label for='plot'></label>
+      <textarea
+        name='plot'
+        cols='72'
+        rows='5'
+        placeholder='The movie’s plot ...'
+      >
+      </textarea>
+      <button class='create-button'>Create Movie</button>
+
+    </form>
+  </div>
+
+</main>
